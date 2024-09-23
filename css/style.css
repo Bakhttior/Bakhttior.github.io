@@ -82,23 +82,25 @@ nav a:nth-child(3) {
 
 .btn {
     width: 100px;
+    height: 35px;
     display: inline-block;
     position: relative;
-
+    background-color: #46A358;
 }
 
-.btn input {
+.btn .log_btn {
     font-family: "Cera_pro_med";
-    width: 100px;
-    height: 35px;
-    background-color: #46A358;
-    border: none;
+    text-decoration: none;
+    display: block;
     border-radius: 6px;
     color: #fff;
     font-size: 16px;
     padding-left: 4px;
-    vertical-align: middle;
+    text-align: right;
     font-weight: 500;
+    position: absolute;
+    top: 7px;
+    left: 33px;
 }
 
 .btn i {
