@@ -51,14 +51,14 @@
     vertical-align: middle;
 }
 
-nav {
+.container header nav {
     max-width: 351px;
     display: inline-block;
     margin-right: 370px;
     height: 45px;
 }
 
-nav a {
+.container header nav a {
     font-family: "Cera_pro_reg";
     text-decoration: none;
     font-weight: 400;
@@ -67,7 +67,7 @@ nav a {
     font-size: 16px;
 }
 
-nav a:first-child {
+.container header nav a:first-child {
     font-weight: 700;
     margin-right: 50px;
     padding-bottom: 25px;
@@ -75,7 +75,7 @@ nav a:first-child {
     border-bottom: 3px solid #46A358;
 }
 
-nav a:nth-child(3) {
+.container header nav a:nth-child(3) {
     margin: 0 39px;
 
 }
@@ -182,4 +182,100 @@ nav a:nth-child(3) {
 .img_right img {
     width: 100%;
     overflow: hidden;
+}
+
+.wraper_container {
+    font-family: "Cera_pro_reg";
+    max-width: 500px;
+    max-height: 656px;
+    margin: 0 auto;
+    padding: 20px;
+    line-height: 16px;
+    font-size: 16px;
+}
+
+.wraper_container nav{
+    width: 157px;
+    height: 16px;
+    margin: 20px auto;
+}
+
+.wraper_container nav a {
+    font-size: 20px;
+    text-decoration: none;
+    font-weight: 500;
+    font-family: Cera pro;
+    color: #000;
+}
+
+.wraper_container nav .start {
+    color: #46A358;
+    width: 50%;
+    border-right: 1px solid #000;
+    margin-right: 10px;
+    padding-right: 10px;
+}
+
+.wraper_container nav .reg {
+    color: #46A358;
+    width: 50%;
+    border-left: 1px solid #000;
+    margin-left: 10px;
+    padding-left: 10px;
+}
+
+.wraper_container main {
+    width: 300px;
+    margin: 0 auto;
+}
+
+.wraper_container main div:first-child {
+    width: 400px;
+    font-weight: 400;
+    font-size: 13px;
+}
+
+.wraper_container main input {
+    width: 300px;
+    height: 40px;
+    border-radius: 5px;
+    border-color: #EAEAEA;
+    margin: 15px 0;
+}
+
+.wraper_container main input::placeholder {
+    padding: 20px;
+}
+
+.wraper_container main .button input {
+    background: #46A358;
+    color: #fff;
+    font-weight: 300;
+    border: none;
+}
+
+.wraper_container footer {
+    width: 300px;
+    margin: 0 auto;
+}
+
+.wraper_container footer .text_register {
+    text-align: center;
+    margin: 20px 0;
+    font-size: 13px;
+    font-weight: 400;
+}
+
+.wraper_container footer input {
+    width: 300px;
+    height: 40px;
+    border-radius: 5px;
+    border-color: #EAEAEA;
+    margin: 15px 0;
+    color: #727272;
+    background: none;
+}
+.text_register{
+    margin: 0 auto;
+    padding: 0;
 }
