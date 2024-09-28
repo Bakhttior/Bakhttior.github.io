@@ -3,6 +3,10 @@
     padding: 0;
     box-sizing: border-box;
 }
+ul,li,div,p,h1,h2,h3,h4,h5,h6{
+    margin: 0;
+    padding: 0;
+}
 
 @font-face {
     font-family: "Cera_pro_bold";
@@ -160,12 +164,12 @@
     margin-bottom: 44px;
 }
 
-.text_left input {
+.text_left .btn_shop {
     font-family: "Cera_pro_bold";
     background-color: #46A358;
     border-radius: 6px;
-    width: 140px;
-    height: 40px;
+    padding: 11px 27px 9px 26px;
+    text-decoration: none;
     border: none;
     font-size: 16px;
     color: #fff;
@@ -278,4 +282,57 @@
 .text_register{
     margin: 0 auto;
     padding: 0;
+}
+
+.gallery_wraper{
+    max-width: 1200px;
+    margin: 171px auto 0;
+}
+.flex_container_gallery{
+    width: 100%;
+    display: flex;
+}
+.galery_box_container{
+    width: 72%;
+}
+
+.galery_box_container header{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.galery_box_container header .pages ul{
+    display: flex;
+}
+
+.pages ul li{
+    list-style: none;
+}
+.pages ul li:nth-child(1){
+    padding-bottom: 7px;
+    border-bottom: 2px solid #46A358;
+}
+.pages ul li a, .drop_down{
+    font-family: "Cera_pro_reg";
+    font-size: 15px;
+    line-height: 16px;
+    font-weight: 400;
+    text-decoration: none;
+    color:#3D3D3D;
+}
+.pages ul li:nth-child(1) a{
+    font-weight: 700;
+    font-family: "Cera_pro_bold";
+    color:#46A358;
+
+}
+.pages ul li:nth-child(2){
+    margin:0 40px 0 37px;
+}
+.galery_box_container header .drop_down{
+
+}
+
+.navigation{
+    width: 30%;
 }
