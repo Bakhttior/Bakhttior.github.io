@@ -3,7 +3,17 @@
     padding: 0;
     box-sizing: border-box;
 }
-ul,li,div,p,h1,h2,h3,h4,h5,h6{
+
+ul,
+li,
+div,
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
     margin: 0;
     padding: 0;
 }
@@ -198,7 +208,7 @@ ul,li,div,p,h1,h2,h3,h4,h5,h6{
     font-size: 16px;
 }
 
-.wraper_container nav{
+.wraper_container nav {
     width: 157px;
     height: 16px;
     margin: 20px auto;
@@ -279,60 +289,139 @@ ul,li,div,p,h1,h2,h3,h4,h5,h6{
     color: #727272;
     background: none;
 }
-.text_register{
+
+.text_register {
     margin: 0 auto;
     padding: 0;
 }
 
-.gallery_wraper{
+.gallery_wraper {
     max-width: 1200px;
     margin: 171px auto 0;
 }
-.flex_container_gallery{
+
+.flex_container_gallery {
     width: 100%;
     display: flex;
 }
-.galery_box_container{
+
+.galery_box_container {
     width: 72%;
 }
 
-.galery_box_container header{
+.galery_box_container header {
     width: 100%;
     display: flex;
     justify-content: space-between;
 }
-.galery_box_container header .pages ul{
+
+.galery_box_container header .pages ul {
     display: flex;
 }
 
-.pages ul li{
+.pages ul li {
     list-style: none;
 }
-.pages ul li:nth-child(1){
+
+.pages ul li:nth-child(1) {
     padding-bottom: 7px;
     border-bottom: 2px solid #46A358;
 }
-.pages ul li a, .drop_down{
+
+.pages ul li a,
+.drop_down {
     font-family: "Cera_pro_reg";
     font-size: 15px;
     line-height: 16px;
     font-weight: 400;
     text-decoration: none;
-    color:#3D3D3D;
+    color: #3D3D3D;
 }
-.pages ul li:nth-child(1) a{
+
+.pages ul li:nth-child(1) a {
     font-weight: 700;
     font-family: "Cera_pro_bold";
-    color:#46A358;
-
-}
-.pages ul li:nth-child(2){
-    margin:0 40px 0 37px;
-}
-.galery_box_container header .drop_down{
+    color: #46A358;
 
 }
 
-.navigation{
+.pages ul li:nth-child(2) {
+    margin: 0 40px 0 37px;
+}
+
+.galery_box_container header .drop_down img {
+    display: inline-block;
+    vertical-align: bottom;
+}
+
+.gallery {
+    max-width: 840px;
+
+}
+
+.gallery .wraper_gallery {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 33px;
+    justify-content: center;
+}
+
+.gallery .icon img {
+    max-width: 250px;
+}
+
+.gallery .icon h5 {
+    font-family: "Cera_pro_reg";
+    font-weight: 400;
+    font-size: 16px;
+    font-weight: 16px;
+    color: #3D3D3D;
+}
+
+.gallery .icon {
+    font-family: "Cera_pro_bold";
+    font-weight: 700;
+    font-size: 18px;
+    font-weight: 16px;
+    color: #46A358;
+}
+
+.navigation {
     width: 30%;
+}
+
+.navigation h2 {
+    font-family: "Cera_pro_bold";
+    font-weight: 700;
+    font-size: 18px;
+    font-weight: 16px;
+    color: #3D3D3D;
+}
+
+.navigation nav ul li a {
+    font-family: "Cera_pro_reg";
+    text-decoration: none;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 40px;
+    color: #3D3D3D;
+    padding-left: 12px;
+}
+
+.navigation nav ul li:nth-child(1) a {
+    font-family: "Cera_pro_bold";
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 40px;
+    color: #46A358;
+}
+
+.navigation nav ul li {
+    list-style: none;
+}
+
+.super_sale_baner {
+    margin-top: 377px;
+    max-width: 310px;
 }
