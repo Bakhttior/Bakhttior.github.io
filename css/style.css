@@ -32,6 +32,7 @@ h6 {
     font-family: "Cera_pro_reg";
     src: url(../fonts/CeraPro-Regular.ttf);
 }
+
 @font-face {
     font-family: "Cera_pro_black";
     src: url(../fonts/CeraPro-Black.ttf);
@@ -408,9 +409,11 @@ h6 {
     object-fit: contain;
     margin-top: 377px;
 }
-.super_sale_baner img{
+
+.super_sale_baner img {
     width: 100%;
 }
+
 .pages_numbers {
     margin: 20px;
 }
@@ -419,18 +422,21 @@ h6 {
     display: flex;
     justify-content: flex-end;
 }
-.pages_numbers ul li{
+
+.pages_numbers ul li {
     margin: 10px;
     list-style: none;
 }
-.pages_numbers ul li a{
+
+.pages_numbers ul li a {
     margin: 10px;
     text-decoration: none;
     border: 1px solid #E5E5E5;
     padding: 9px 13px;
     border-radius: 4px;
 }
-.pages_numbers ul li a{
+
+.pages_numbers ul li a {
     font-family: "Cera_pro_reg";
     margin: 10px;
     text-decoration: none;
@@ -441,7 +447,8 @@ h6 {
     line-height: 16px;
     font-weight: 300;
 }
-.pages_numbers ul li:nth-child(1) a{
+
+.pages_numbers ul li:nth-child(1) a {
     font-family: "Cera_pro_bold";
     padding: 9px 16px;
     border: none;
@@ -450,37 +457,48 @@ h6 {
     color: #fff;
 }
 
-.blog{
+.blog {
     width: 100%;
     margin-top: 69px;
 }
-.upper_box{
+
+.upper_box {
     display: flex;
     justify-content: space-between;
     text-align: right;
+    flex-wrap: wrap;
 }
-.summer_cactus img, .styling_trends img {
+
+.summer_cactus img,
+.styling_trends img {
     width: 49%;
 }
-.summer_cactus, .styling_trends{
+
+.summer_cactus,
+.styling_trends {
     width: 49%;
     background-color: #FBFBFB;
     display: flex;
     padding: 37px 30px 0 0;
-} 
-.summer_text, .styling_text{
+}
+
+.summer_text,
+.styling_text {
     width: 50%;
 }
-.summer_text h2, .styling_text h2{
+
+.summer_text h2,
+.styling_text h2 {
     font-family: "Cera_pro_black";
     font-size: 18px;
     line-height: 24px;
     font-weight: 900;
-    color:#3D3D3D;
+    color: #3D3D3D;
     text-transform: uppercase;
 }
+
 .summer_text p,
-.styling_text p{
+.styling_text p {
     font-family: "Cera_pro_reg";
     font-size: 14px;
     line-height: 24px;
@@ -488,8 +506,9 @@ h6 {
     color: #727272;
     margin: 9px 0 25px;
 }
+
 .summer_text a,
-.styling_text a{
+.styling_text a {
     font-family: "Cera_pro_reg";
     font-size: 14px;
     line-height: 20px;
@@ -498,5 +517,85 @@ h6 {
     padding: 11px 28px;
     background-color: #46A358;
     border-radius: 6px;
+    text-decoration: none;
+}
+
+.down_box {
+    text-align: center;
+    margin-top: 138px;
+}
+
+.down_box h2 {
+    font-family: "Cera_pro_bold";
+    font-size: 30px;
+    line-height: 16px;
+    font-weight: 700;
+    margin-bottom: 15px;
+    color: #3D3D3D;
+    ;
+}
+
+.down_box p {
+    font-size: 14px;
+    line-height: 24px;
+    font-weight: 400;
+    color: #727272;
+    margin-bottom: 35px;
+}
+
+.down_box_container {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    text-align: left;
+    margin-bottom: 68px;
+}
+
+.down_box_container .card {
+    width: 22%;
+}
+
+.down_box_container .card img {
+    width: 100%;
+}
+
+.down_box_container .card .green_text_card {
+    font-family: "Cera_pro_med";
+    font-size: 14px;
+    line-height: 16px;
+    font-weight: 500;
+    color: #46A358;
+    margin: 9px 0 4px;
+    padding-left: 15px;
+}
+
+.down_box_container .card h2 {
+    font-family: "Cera_pro_bold";
+    font-size: 20px;
+    line-height: 26px;
+    font-weight: 700;
+    color: #3d3d3d;
+    margin: 4px 0;
+    width: 66%;
+    padding-left: 15px;
+}
+
+.down_box_container .card p {
+    font-size: 14px;
+    line-height: 22px;
+    font-weight: 400;
+    color: #727272;
+    margin: 4px 0 9px;
+    padding-left: 15px;
+}
+
+.down_box_container .card a {
+    font-family: "Cera_pro_med";
+    font-size: 14px;
+    line-height: 16px;
+    font-weight: 500;
+    color: #3d3d3d;
+    padding-left: 15px;
     text-decoration: none;
 }
