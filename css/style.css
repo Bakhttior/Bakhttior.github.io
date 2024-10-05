@@ -43,7 +43,8 @@ h6 {
     color: #46A358;
     max-width: 12%;
 }
-.container header{
+
+.container header {
     display: flex;
     justify-content: space-between;
 }
@@ -57,19 +58,19 @@ h6 {
 }
 
 .container header nav {
-  width: 29%;
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
+    width: 29%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
 }
 
- .container header nav a {
+.container header nav a {
     font-family: "Cera_pro_reg";
     text-decoration: none;
     font-weight: 400;
     color: #3D3D3D;
     font-size: 16px;
-} 
+}
 
 .container header nav a:first-child {
     font-weight: 700;
@@ -79,7 +80,7 @@ h6 {
 
 
 .btn {
-    
+
     position: relative;
     background-color: #46A358;
     border-radius: 6px;
@@ -174,10 +175,9 @@ h6 {
 
 .wraper_container {
     font-family: "Cera_pro_reg";
-    max-width: 500px;
-    max-height: 656px;
+    max-width: 100%;
     margin: 0 auto;
-    padding: 20px;
+    padding: 105px 0;
     line-height: 16px;
     font-size: 16px;
 }
@@ -192,7 +192,7 @@ h6 {
     font-size: 20px;
     text-decoration: none;
     font-weight: 500;
-    font-family: Cera pro;
+    font-family: "Cera_pro_reg";
     color: #000;
 }
 
@@ -270,26 +270,27 @@ h6 {
 }
 
 .gallery_wraper {
-    max-width: 1200px;
+    width: 100%;
     margin: 171px auto 0;
 }
 
 .flex_container_gallery {
     width: 100%;
     display: flex;
+    flex-wrap: wrap;
 }
 
 .galery_box_container {
-    width: 72%;
+    width: 70%;
 }
 
-.galery_box_container header {
+.galery_box_container nav {
     width: 100%;
     display: flex;
     justify-content: space-between;
 }
 
-.galery_box_container header .pages ul {
+.galery_box_container nav .pages ul {
     display: flex;
 }
 
@@ -328,11 +329,6 @@ h6 {
     vertical-align: bottom;
 }
 
-.gallery {
-    max-width: 840px;
-
-}
-
 .gallery .wraper_gallery {
     width: 100%;
     display: flex;
@@ -362,7 +358,15 @@ h6 {
 }
 
 .navigation {
-    width: 30%;
+    width: 26%;
+    background-color: #FBFBFB;
+}
+
+.navigation .nav_box {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
 }
 
 .navigation h2 {
@@ -396,6 +400,48 @@ h6 {
 }
 
 .super_sale_baner {
+    max-width: 100%;
+    object-fit: contain;
     margin-top: 377px;
-    max-width: 310px;
+}
+.super_sale_baner img{
+    width: 100%;
+}
+.pages_numbers {
+    margin: 20px;
+}
+
+.pages_numbers ul {
+    display: flex;
+    justify-content: flex-end;
+}
+.pages_numbers ul li{
+    margin: 10px;
+    list-style: none;
+}
+.pages_numbers ul li a{
+    margin: 10px;
+    text-decoration: none;
+    border: 1px solid #E5E5E5;
+    padding: 9px 13px;
+    border-radius: 4px;
+}
+.pages_numbers ul li a{
+    font-family: "Cera_pro_reg";
+    margin: 10px;
+    text-decoration: none;
+    border: 1px solid #E5E5E5;
+    padding: 9px 13px;
+    border-radius: 4px;
+    font-size: 18px;
+    line-height: 16px;
+    font-weight: 300;
+}
+.pages_numbers ul li:nth-child(1) a{
+    font-family: "Cera_pro_bold";
+    padding: 9px 16px;
+    border: none;
+    font-weight: 700;
+    background-color: #46A358;
+    color: #fff;
 }
