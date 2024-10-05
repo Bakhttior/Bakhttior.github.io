@@ -33,43 +33,40 @@ h6 {
     src: url(../fonts/CeraPro-Regular.ttf);
 }
 
+@font-face {
+    font-family: "Cera_pro_black";
+    src: url(../fonts/CeraPro-Black.ttf);
+}
+
 .container {
     font-family: "Cera_pro_reg";
-    max-width: 1200px;
+    max-width: 100%;
     margin: 30px auto 0;
 }
 
 .header_logo {
     color: #46A358;
-    width: 150px;
-    height: 34px;
-    vertical-align: middle;
-    display: inline-block;
-    margin-right: 229px;
+    max-width: 12%;
 }
 
-.header_logo img,
-.text_logo {
-    display: inline-block;
+.container header {
+    display: flex;
+    justify-content: space-between;
 }
 
-.header_logo .text_logo {
-    width: 110px;
-    height: 13px;
-    vertical-align: middle;
+.header_logo {
+    display: flex;
 }
 
 .header_logo img {
-    width: 34px;
-    height: 34px;
-    vertical-align: middle;
+    max-width: 100%;
 }
 
 .container header nav {
-    max-width: 351px;
-    display: inline-block;
-    margin-right: 370px;
-    height: 45px;
+    width: 29%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 .container header nav a {
@@ -77,44 +74,33 @@ h6 {
     text-decoration: none;
     font-weight: 400;
     color: #3D3D3D;
-    vertical-align: top;
     font-size: 16px;
 }
 
 .container header nav a:first-child {
     font-weight: 700;
-    margin-right: 50px;
     padding-bottom: 25px;
-    height: 100%;
     border-bottom: 3px solid #46A358;
 }
 
-.container header nav a:nth-child(3) {
-    margin: 0 39px;
-
-}
 
 .btn {
-    width: 100px;
-    height: 35px;
-    display: inline-block;
+
     position: relative;
     background-color: #46A358;
+    border-radius: 6px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .btn .log_btn {
     font-family: "Cera_pro_med";
     text-decoration: none;
-    display: block;
-    border-radius: 6px;
     color: #fff;
     font-size: 16px;
-    padding-left: 4px;
-    text-align: right;
     font-weight: 500;
-    position: absolute;
-    top: 7px;
-    left: 33px;
+    padding: 8px 17px 7px 41px;
 }
 
 .btn i {
@@ -122,22 +108,20 @@ h6 {
     color: #fff;
     font-size: 20px;
     position: absolute;
-    top: 7px;
-    left: 5px;
-    vertical-align: middle;
+    top: 14px;
+    left: 12px;
 }
 
 .text {
     margin-top: 12px;
     background-color: #F5F5F580;
-    height: 450px;
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .text_left {
     width: 59%;
-    display: inline-block;
-    padding-left: 40px;
-    vertical-align: middle;
+    padding: 68px 0 0 43px;
 }
 
 .text_left p:nth-child(1) {
@@ -151,8 +135,7 @@ h6 {
 
 .text_left h1 {
     font-family: "Cera_pro_bold";
-    height: 140px;
-    width: 530px;
+    max-width: 80%;
     font-size: 70px;
     line-height: 70px;
     text-transform: uppercase;
@@ -167,8 +150,7 @@ h6 {
     font-family: "Cera_pro_reg";
     line-height: 24px;
     font-size: 14px;
-    width: 557px;
-    height: 45px;
+    max-width: 80%;
     color: #727272;
     font-weight: 400;
     margin-bottom: 44px;
@@ -189,8 +171,6 @@ h6 {
 
 .img_right {
     width: 40%;
-    display: inline-block;
-    vertical-align: middle;
 }
 
 .img_right img {
@@ -200,10 +180,9 @@ h6 {
 
 .wraper_container {
     font-family: "Cera_pro_reg";
-    max-width: 500px;
-    max-height: 656px;
+    max-width: 100%;
     margin: 0 auto;
-    padding: 20px;
+    padding: 105px 0;
     line-height: 16px;
     font-size: 16px;
 }
@@ -218,7 +197,7 @@ h6 {
     font-size: 20px;
     text-decoration: none;
     font-weight: 500;
-    font-family: Cera pro;
+    font-family: "Cera_pro_reg";
     color: #000;
 }
 
@@ -296,26 +275,27 @@ h6 {
 }
 
 .gallery_wraper {
-    max-width: 1200px;
+    width: 100%;
     margin: 171px auto 0;
 }
 
 .flex_container_gallery {
     width: 100%;
     display: flex;
+    flex-wrap: wrap;
 }
 
 .galery_box_container {
-    width: 72%;
+    width: 70%;
 }
 
-.galery_box_container header {
+.galery_box_container nav {
     width: 100%;
     display: flex;
     justify-content: space-between;
 }
 
-.galery_box_container header .pages ul {
+.galery_box_container nav .pages ul {
     display: flex;
 }
 
@@ -354,11 +334,6 @@ h6 {
     vertical-align: bottom;
 }
 
-.gallery {
-    max-width: 840px;
-
-}
-
 .gallery .wraper_gallery {
     width: 100%;
     display: flex;
@@ -388,7 +363,15 @@ h6 {
 }
 
 .navigation {
-    width: 30%;
+    width: 26%;
+    background-color: #FBFBFB;
+}
+
+.navigation .nav_box {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
 }
 
 .navigation h2 {
@@ -422,6 +405,197 @@ h6 {
 }
 
 .super_sale_baner {
+    max-width: 100%;
+    object-fit: contain;
     margin-top: 377px;
-    max-width: 310px;
+}
+
+.super_sale_baner img {
+    width: 100%;
+}
+
+.pages_numbers {
+    margin: 20px;
+}
+
+.pages_numbers ul {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.pages_numbers ul li {
+    margin: 10px;
+    list-style: none;
+}
+
+.pages_numbers ul li a {
+    margin: 10px;
+    text-decoration: none;
+    border: 1px solid #E5E5E5;
+    padding: 9px 13px;
+    border-radius: 4px;
+}
+
+.pages_numbers ul li a {
+    font-family: "Cera_pro_reg";
+    margin: 10px;
+    text-decoration: none;
+    border: 1px solid #E5E5E5;
+    padding: 9px 13px;
+    border-radius: 4px;
+    font-size: 18px;
+    line-height: 16px;
+    font-weight: 300;
+}
+
+.pages_numbers ul li:nth-child(1) a {
+    font-family: "Cera_pro_bold";
+    padding: 9px 16px;
+    border: none;
+    font-weight: 700;
+    background-color: #46A358;
+    color: #fff;
+}
+
+.blog {
+    width: 100%;
+    margin-top: 69px;
+}
+
+.upper_box {
+    display: flex;
+    justify-content: space-between;
+    text-align: right;
+    flex-wrap: wrap;
+}
+
+.summer_cactus img,
+.styling_trends img {
+    width: 49%;
+}
+
+.summer_cactus,
+.styling_trends {
+    width: 49%;
+    background-color: #FBFBFB;
+    display: flex;
+    padding: 37px 30px 0 0;
+}
+
+.summer_text,
+.styling_text {
+    width: 50%;
+}
+
+.summer_text h2,
+.styling_text h2 {
+    font-family: "Cera_pro_black";
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: 900;
+    color: #3D3D3D;
+    text-transform: uppercase;
+}
+
+.summer_text p,
+.styling_text p {
+    font-family: "Cera_pro_reg";
+    font-size: 14px;
+    line-height: 24px;
+    font-weight: 400;
+    color: #727272;
+    margin: 9px 0 25px;
+}
+
+.summer_text a,
+.styling_text a {
+    font-family: "Cera_pro_reg";
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 500;
+    color: #fff;
+    padding: 11px 28px;
+    background-color: #46A358;
+    border-radius: 6px;
+    text-decoration: none;
+}
+
+.down_box {
+    text-align: center;
+    margin-top: 138px;
+}
+
+.down_box h2 {
+    font-family: "Cera_pro_bold";
+    font-size: 30px;
+    line-height: 16px;
+    font-weight: 700;
+    margin-bottom: 15px;
+    color: #3D3D3D;
+    ;
+}
+
+.down_box p {
+    font-size: 14px;
+    line-height: 24px;
+    font-weight: 400;
+    color: #727272;
+    margin-bottom: 35px;
+}
+
+.down_box_container {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    text-align: left;
+    margin-bottom: 68px;
+}
+
+.down_box_container .card {
+    width: 22%;
+}
+
+.down_box_container .card img {
+    width: 100%;
+}
+
+.down_box_container .card .green_text_card {
+    font-family: "Cera_pro_med";
+    font-size: 14px;
+    line-height: 16px;
+    font-weight: 500;
+    color: #46A358;
+    margin: 9px 0 4px;
+    padding-left: 15px;
+}
+
+.down_box_container .card h2 {
+    font-family: "Cera_pro_bold";
+    font-size: 20px;
+    line-height: 26px;
+    font-weight: 700;
+    color: #3d3d3d;
+    margin: 4px 0;
+    width: 66%;
+    padding-left: 15px;
+}
+
+.down_box_container .card p {
+    font-size: 14px;
+    line-height: 22px;
+    font-weight: 400;
+    color: #727272;
+    margin: 4px 0 9px;
+    padding-left: 15px;
+}
+
+.down_box_container .card a {
+    font-family: "Cera_pro_med";
+    font-size: 14px;
+    line-height: 16px;
+    font-weight: 500;
+    color: #3d3d3d;
+    padding-left: 15px;
+    text-decoration: none;
 }
