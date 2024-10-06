@@ -273,6 +273,9 @@ h6 {
     margin: 0 auto;
     padding: 0;
 }
+.gallery{
+    margin-top: 31px;
+}
 
 .gallery_wraper {
     width: 100%;
@@ -392,11 +395,28 @@ h6 {
     font-size: 16px;
     font-weight: 16px;
 }
+
+.img_container{
+    position: relative;
+}
 .icon .hover_icons {
-    /* opacity: 0; */
+    opacity: 0;
+    position: absolute;
+    bottom: 7px;
+    left: 67px;
+    transition: 0.5s;
+}
+.icon .hover_icons img{
+    background-color: rgb(255, 255, 255, 0.6);
+    border-radius: 4px;
+    padding: 7px;
 }
 .icon:hover {
-    border-top: 1px solid #46A358;;
+    border-top: 1px solid #46A358;
+    cursor: pointer;
+}
+.icon:hover .hover_icons{
+    opacity: 1;
 }
 
 .navigation {
