@@ -554,12 +554,15 @@ h6 {
 
 .summer_text h2,
 .styling_text h2 {
+    width: 60%;
     font-family: "Cera_pro_black";
     font-size: 18px;
     line-height: 24px;
     font-weight: 900;
     color: #3D3D3D;
     text-transform: uppercase;
+    margin-left: auto;
+    margin-right: 0;
 }
 
 .summer_text p,
@@ -570,6 +573,7 @@ h6 {
     font-weight: 400;
     color: #727272;
     margin: 9px 0 25px;
+    text-align: right;
 }
 
 .summer_text a,
