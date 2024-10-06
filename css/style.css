@@ -340,10 +340,11 @@ h6 {
     flex-wrap: wrap;
     gap: 33px;
     justify-content: center;
+    align-items: center;
 }
 
 .gallery .icon img {
-    max-width: 250px;
+    max-width: 100%;
 }
 
 .gallery .icon h5 {
