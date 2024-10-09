@@ -51,11 +51,15 @@ h6 {
 
 .container header {
     display: flex;
+    min-height: 50px;;
     justify-content: space-between;
+    border-bottom: 0.3px solid #46A35880;
 }
 
 .header_logo {
     display: flex;
+    justify-content: center;
+    max-height: 34px;
 }
 
 .header_logo img {
@@ -66,7 +70,7 @@ h6 {
     width: 29%;
     display: flex;
     justify-content: space-between;
-    flex-wrap: wrap;
+    /* padding-bottom: 25px; */
 }
 
 .container header nav a {
@@ -77,15 +81,14 @@ h6 {
     font-size: 16px;
 }
 
-.container header nav a:first-child {
+.container header nav a:hover {
     font-weight: 700;
     padding-bottom: 25px;
     border-bottom: 3px solid #46A358;
 }
 
-
 .btn {
-
+    max-height: 34px;
     position: relative;
     background-color: #46A358;
     border-radius: 6px;
@@ -102,15 +105,20 @@ h6 {
     font-weight: 500;
     padding: 8px 17px 7px 41px;
 }
+.btn img {
+    position: absolute;
+    left: 10px;
+    top: 5px;
+}
 
-.btn i {
+/* .btn i {
     background-color: none;
     color: #fff;
     font-size: 20px;
     position: absolute;
     top: 14px;
     left: 12px;
-}
+} */
 
 .text {
     margin-top: 12px;
