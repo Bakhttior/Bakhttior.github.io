@@ -69,8 +69,7 @@ h6 {
 .container header nav {
     width: 29%;
     display: flex;
-    justify-content: space-between;
-    /* padding-bottom: 25px; */
+    justify-content: space-around;
 }
 
 .container header nav a {
@@ -107,29 +106,24 @@ h6 {
 }
 .btn img {
     position: absolute;
-    left: 10px;
-    top: 5px;
+    left: 17px;
+    top: 7px;
 }
 
-/* .btn i {
-    background-color: none;
-    color: #fff;
-    font-size: 20px;
-    position: absolute;
-    top: 14px;
-    left: 12px;
-} */
-
 .text {
+    max-width: 100%;
     margin-top: 12px;
     background-color: #F5F5F580;
     display: flex;
+    justify-content: center;
+    align-items: center;
     flex-wrap: wrap;
 }
 
 .text_left {
-    width: 59%;
-    padding: 68px 0 0 43px;
+    max-width: 59%;
+    max-height: 100%;
+    padding: 68px 0 85px 43px;
 }
 
 .text_left p:nth-child(1) {
@@ -143,7 +137,6 @@ h6 {
 
 .text_left h1 {
     font-family: "Cera_pro_bold";
-    max-width: 80%;
     font-size: 70px;
     line-height: 70px;
     text-transform: uppercase;
@@ -178,11 +171,11 @@ h6 {
 }
 
 .img_right {
-    width: 40%;
+    max-width: 40%;
 }
 
 .img_right img {
-    width: 100%;
+    max-width: 100%;
     overflow: hidden;
 }
 
