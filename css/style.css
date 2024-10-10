@@ -37,10 +37,14 @@ h6 {
     font-family: "Cera_pro_black";
     src: url(../fonts/CeraPro-Black.ttf);
 }
+@font-face {
+    font-family: "EncodeSansExpanded";
+    src: url(../fonts/EncodeSansExpanded-Regular.ttf);
+}
 
 .container {
     font-family: "Cera_pro_reg";
-    max-width: 100%;
+    max-width: 87%;
     margin: 30px auto 0;
 }
 
@@ -51,11 +55,15 @@ h6 {
 
 .container header {
     display: flex;
+    min-height: 50px;;
     justify-content: space-between;
+    border-bottom: 0.3px solid #46A35880;
 }
 
 .header_logo {
     display: flex;
+    justify-content: center;
+    max-height: 34px;
 }
 
 .header_logo img {
@@ -65,27 +73,91 @@ h6 {
 .container header nav {
     width: 29%;
     display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
+    justify-content: space-around;
 }
 
-.container header nav a {
+.container header nav>ul  {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    
+}
+.container header nav>ul  li{
+    position: relative;
     font-family: "Cera_pro_reg";
-    text-decoration: none;
     font-weight: 400;
     color: #3D3D3D;
     font-size: 16px;
+    cursor: pointer;
 }
 
-.container header nav a:first-child {
+.container header nav>ul>li:hover {
     font-weight: 700;
     padding-bottom: 25px;
     border-bottom: 3px solid #46A358;
+    transition: all 0.3s ease;
+}
+.container header nav li:hover .inner_level_menu_activ::after {
+    content: ">";
+    color: #000;
+    margin-left: 5.125rem;
+}
+.container header nav li .inner_level_menu_activ:hover::after {
+    content: "<";
+    color: #fff;
+    margin-left: 5.125rem;
+}
+.container header nav li:hover .inner_level_menu{
+    opacity: 1;
+    visibility: visible;
 }
 
+.inner_level_menu {
+    position: absolute;
+    top: 50px;
+    left: 0;
+    list-style: none;
+    min-width: 188px;
+    background-color: #EDF6EE;
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.6s ease-in-out;
+}
+
+.inner_level_menu li {
+    font-family: "EncodeSansExpanded";
+    list-style: none;
+    padding: 7px 14px;
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: 400;
+}
+.inner_level_menu li:hover {
+    font-family: "EncodeSansExpanded";
+    background: #1A712A;
+    color: #fff;
+    font-weight: 700;
+}
+
+.inner_level_menu li:hover .inner_menu_level_2{
+    opacity: 1;
+    visibility: visible;
+}
+.inner_menu_level_2 {
+    position: absolute;
+    top: 0;
+    left: 188px;
+    list-style: none;
+    min-width: 178px;
+    background-color: #EDF6EE;
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.6s ease-in-out;
+}
 
 .btn {
-
+    max-height: 34px;
     position: relative;
     background-color: #46A358;
     border-radius: 6px;
@@ -102,26 +174,26 @@ h6 {
     font-weight: 500;
     padding: 8px 17px 7px 41px;
 }
-
-.btn i {
-    background-color: none;
-    color: #fff;
-    font-size: 20px;
+.btn img {
     position: absolute;
-    top: 14px;
-    left: 12px;
+    left: 17px;
+    top: 7px;
 }
 
 .text {
+    max-width: 100%;
     margin-top: 12px;
     background-color: #F5F5F580;
     display: flex;
+    justify-content: center;
+    align-items: center;
     flex-wrap: wrap;
 }
 
 .text_left {
-    width: 59%;
-    padding: 68px 0 0 43px;
+    max-width: 59%;
+    max-height: 100%;
+    padding: 68px 0 85px 43px;
 }
 
 .text_left p:nth-child(1) {
@@ -135,7 +207,6 @@ h6 {
 
 .text_left h1 {
     font-family: "Cera_pro_bold";
-    max-width: 80%;
     font-size: 70px;
     line-height: 70px;
     text-transform: uppercase;
@@ -170,11 +241,11 @@ h6 {
 }
 
 .img_right {
-    width: 40%;
+    max-width: 40%;
 }
 
 .img_right img {
-    width: 100%;
+    max-width: 100%;
     overflow: hidden;
 }
 
@@ -279,7 +350,7 @@ h6 {
 }
 
 .gallery_wraper {
-    width: 100%;
+    max-width: 100%;
     margin: 171px auto 0;
 }
 
@@ -428,12 +499,12 @@ h6 {
 }
 
 .navigation {
-    width: 26%;
+    width: 25%;
     background-color: #FBFBFB;
 }
 
 .navigation .nav_box {
-    width: 100%;
+    max-width: 100%;
     display: flex;
     justify-content: space-between;
     flex-direction: column;
@@ -471,7 +542,6 @@ h6 {
 
 .super_sale_baner {
     max-width: 100%;
-    object-fit: contain;
     margin-top: 377px;
 }
 
@@ -480,7 +550,7 @@ h6 {
 }
 
 .pages_numbers {
-    margin: 20px;
+    margin-top: 90px;
 }
 
 .pages_numbers ul {
@@ -489,16 +559,7 @@ h6 {
 }
 
 .pages_numbers ul li {
-    margin: 10px;
     list-style: none;
-}
-
-.pages_numbers ul li a {
-    margin: 10px;
-    text-decoration: none;
-    border: 1px solid #E5E5E5;
-    padding: 9px 13px;
-    border-radius: 4px;
 }
 
 .pages_numbers ul li a {
@@ -506,16 +567,16 @@ h6 {
     margin: 10px;
     text-decoration: none;
     border: 1px solid #E5E5E5;
-    padding: 9px 13px;
+    padding: 9px 14px;
     border-radius: 4px;
     font-size: 18px;
     line-height: 16px;
     font-weight: 300;
 }
 
-.pages_numbers ul li:nth-child(1) a {
+.pages_numbers ul li:hover a {
     font-family: "Cera_pro_bold";
-    padding: 9px 16px;
+    padding: 9px 14px;
     border: none;
     font-weight: 700;
     background-color: #46A358;
@@ -523,7 +584,7 @@ h6 {
 }
 
 .blog {
-    width: 100%;
+    max-width: 100%;
     margin-top: 69px;
 }
 
@@ -531,20 +592,21 @@ h6 {
     display: flex;
     justify-content: space-between;
     text-align: right;
-    flex-wrap: wrap;
+    /* flex-wrap: wrap; */
 }
 
 .summer_cactus img,
 .styling_trends img {
-    width: 49%;
+    max-width: 49%;
 }
 
 .summer_cactus,
 .styling_trends {
-    width: 49%;
+    max-width: 49%;
     background-color: #FBFBFB;
     display: flex;
-    padding: 37px 30px 0 0;
+    justify-content: center;
+    padding: 37px 30px 10px 0;
 }
 
 .summer_text,
@@ -613,7 +675,7 @@ h6 {
 }
 
 .down_box_container {
-    width: 100%;
+    max-width: 100%;
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
@@ -622,7 +684,7 @@ h6 {
 }
 
 .down_box_container .card {
-    width: 22%;
+    max-width: 22%;
 }
 
 .down_box_container .card img {
