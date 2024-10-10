@@ -601,12 +601,13 @@ h6 {
     display: flex;
     justify-content: space-between;
     text-align: right;
-    /* flex-wrap: wrap; */
 }
-
-.summer_cactus img,
-.styling_trends img {
-    max-width: 49%;
+.styling_img, .summer_img{
+    width: 49%;
+}
+.summer_cactus .styling_img img,
+.styling_trends .summer_img img {
+    width: 100%;
 }
 
 .summer_cactus,
