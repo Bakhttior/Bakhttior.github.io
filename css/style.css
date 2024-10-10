@@ -37,6 +37,10 @@ h6 {
     font-family: "Cera_pro_black";
     src: url(../fonts/CeraPro-Black.ttf);
 }
+@font-face {
+    font-family: "EncodeSansExpanded";
+    src: url(../fonts/EncodeSansExpanded-Regular.ttf);
+}
 
 .container {
     font-family: "Cera_pro_reg";
@@ -72,18 +76,84 @@ h6 {
     justify-content: space-around;
 }
 
-.container header nav a {
+.container header nav>ul  {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    
+}
+.container header nav>ul  li{
+    position: relative;
     font-family: "Cera_pro_reg";
-    text-decoration: none;
     font-weight: 400;
     color: #3D3D3D;
     font-size: 16px;
+    cursor: pointer;
 }
 
-.container header nav a:hover {
+.container header nav>ul>li:hover {
     font-weight: 700;
     padding-bottom: 25px;
     border-bottom: 3px solid #46A358;
+    transition: all 0.3s ease;
+}
+.container header nav li:hover .inner_level_menu_activ::after {
+    content: ">";
+    color: #000;
+    margin-left: 5.125rem;
+}
+.container header nav li .inner_level_menu_activ:hover::after {
+    content: "<";
+    color: #fff;
+    margin-left: 5.125rem;
+}
+.container header nav li:hover .inner_level_menu{
+    opacity: 1;
+    visibility: visible;
+}
+
+.inner_level_menu {
+    position: absolute;
+    top: 50px;
+    left: 0;
+    list-style: none;
+    min-width: 188px;
+    background-color: #EDF6EE;
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.6s ease-in-out;
+}
+
+.inner_level_menu li {
+    font-family: "EncodeSansExpanded";
+    list-style: none;
+    padding: 7px 14px;
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: 400;
+}
+.inner_level_menu li:hover {
+    font-family: "EncodeSansExpanded";
+    background: #1A712A;
+    color: #fff;
+    font-weight: 700;
+}
+
+.inner_level_menu li:hover .inner_menu_level_2{
+    opacity: 1;
+    visibility: visible;
+}
+.inner_menu_level_2 {
+    position: absolute;
+    top: 0;
+    left: 188px;
+    list-style: none;
+    min-width: 178px;
+    background-color: #EDF6EE;
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.6s ease-in-out;
 }
 
 .btn {
@@ -280,7 +350,7 @@ h6 {
 }
 
 .gallery_wraper {
-    width: 100%;
+    max-width: 100%;
     margin: 171px auto 0;
 }
 
