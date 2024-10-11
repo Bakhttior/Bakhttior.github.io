@@ -446,6 +446,7 @@ h6 {
 }
 
 .gallery .icon {
+    width: 30%;
     font-family: "Cera_pro_bold";
     font-weight: 700;
     font-size: 18px;
