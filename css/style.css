@@ -608,9 +608,12 @@ h6 {
     justify-content: space-between;
     text-align: right;
 }
-.styling_img, .summer_img{
+
+.styling_img,
+.summer_img {
     width: 49%;
 }
+
 .summer_cactus .styling_img img,
 .styling_trends .summer_img img {
     width: 100%;
@@ -763,6 +766,7 @@ h6 {
     position: relative;
     margin-right: 61px;
 }
+
 .contacts_card_top {
     background-repeat: no-repeat;
     background-size: contain;
@@ -777,6 +781,7 @@ h6 {
     background-image: url(../images/contacts/Picture_1.svg);
 
 }
+
 .contacts_card_line::after {
     position: absolute;
     top: 0;
@@ -795,7 +800,7 @@ h6 {
     width: 32%;
 }
 
-.contacts_card_bottom_text h2{
+.contacts_card_bottom_text h2 {
     font-family: "Cera_pro_bold";
     font-size: 17px;
     line-height: 16px;
@@ -803,33 +808,37 @@ h6 {
     margin: 15px 0 9px;
     color: #3D3D3D;
 }
-.contacts_card_bottom_text p{
+
+.contacts_card_bottom_text p {
     font-size: 14px;
     line-height: 22px;
     font-weight: 400;
     color: #727272;
 }
 
-.contacts_card_text h2{
+.contacts_card_text h2 {
     font-family: "Cera_pro_bold";
     font-size: 18px;
     line-height: 16px;
     font-weight: 700;
     color: #3D3D3D;
 }
-.contacts_text_intput{
+
+.contacts_text_intput {
     width: 100%;
     display: flex;
     align-items: center;
     margin: 25px 0 18px;
 }
-.contacts_text_intput input{
+
+.contacts_text_intput input {
     width: 75%;
     padding: 12px;
     border: none;
-    border-radius: 5px 0 0 5px ;
+    border-radius: 5px 0 0 5px;
 }
-.contacts_text_intput button{
+
+.contacts_text_intput button {
     width: 25%;
     font-family: "Cera_pro_bold";
     font-size: 18px;
@@ -841,13 +850,15 @@ h6 {
     background-color: #46A358;
     border-radius: 0 5px 5px 0;
 }
-.contacts_text_intput input::placeholder{
+
+.contacts_text_intput input::placeholder {
     font-size: 14px;
     line-height: 16px;
     font-weight: 400;
     color: #ACACAC;
 }
-.contacts_card_text p{
+
+.contacts_card_text p {
     font-size: 14px;
     line-height: 22px;
     font-weight: 400;
@@ -865,42 +876,50 @@ h6 {
     width: 13%;
 }
 
-.contacts_center_logo img{
+.contacts_center_logo img {
     width: 100%;
     object-fit: contain;
-} 
+}
 
-.contacts_center_text_1,.contacts_center_text_2, .contacts_center_number {
+.contacts_center_text_1,
+.contacts_center_text_2,
+.contacts_center_number {
     display: flex;
     align-items: center;
 }
-.contacts_center_text_1{
+
+.contacts_center_text_1 {
     width: 17%;
     margin: 0 155px;
     max-width: 100%;
 }
-.contacts_center_text_1 p, 
+
+.contacts_center_text_1 p,
 .contacts_center_text_2 a,
-.contacts_center_number p{
+.contacts_center_number p {
     font-size: 14px;
     line-height: 22px;
     font-weight: 400;
     color: #3D3D3D;
 }
-.contacts_center_text_1 img, 
-.contacts_center_text_2 img, 
+
+.contacts_center_text_1 img,
+.contacts_center_text_2 img,
 .contacts_center_number img {
     width: 20px;
     margin-right: 9px;
 }
+
 .contacts_center_text_2 {
-    width: 16%; 
+    width: 16%;
 }
+
 .contacts_center_text_2 a {
     text-decoration: none;
 }
+
 .contacts_center_number {
-    margin: 0 0 0 155px ;
+    margin: 0 0 0 155px;
     width: 14%;
 }
 
@@ -927,12 +946,15 @@ h6 {
     flex-direction: column;
     padding-bottom: 6px;
 }
+
 .contacts_bottom_card:nth-child(1) {
     margin-right: 164px;
 }
+
 .contacts_bottom_card:nth-child(2) {
     margin-right: 129px;
 }
+
 .contacts_bottom_card:nth-child(3) {
     margin-right: 173px;
 }
@@ -942,26 +964,28 @@ h6 {
     text-align: center;
     padding-top: 6px;
 }
+
 .contacts_footer p,
-.contacts_bottom_card ul li{
+.contacts_bottom_card ul li {
     font-size: 14px;
     line-height: 30px;
     font-weight: 400;
     color: #3D3D3D;
 }
 
-.media_box ul{
+.media_box ul {
     display: flex;
     flex-wrap: wrap;
 }
 
-.media_box ul li{
+.media_box ul li {
     list-style: none;
     padding: 7px;
     border: 1px solid rgb(70, 163, 88, 0.2);
     border-radius: 4px;
     margin-right: 10px;
 }
+
 .media_box ul li:nth-child(1) {
     padding: 7px 11px;
 }
@@ -969,6 +993,7 @@ h6 {
 .contacts_bottom_media h3:nth-child(2) {
     margin: 33px 0 13px;
 }
+
 .contacts_bottom_media img {
     max-width: 100%;
 }
