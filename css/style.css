@@ -887,6 +887,10 @@ h6 {
     width: 100%;
     object-fit: contain;
 }
+.icon_svg_top {
+    width: 30px;
+    background: none;
+}
 
 .contacts_center_text_1,
 .contacts_center_text_2,
@@ -898,7 +902,6 @@ h6 {
 .contacts_center_text_1 {
     width: 17%;
     margin: 0 155px;
-    max-width: 100%;
 }
 
 .contacts_center_text_1 p,
@@ -1003,8 +1006,9 @@ h6 {
     cursor: pointer;
 }
 
-.media_box ul li:nth-child(1) {
-    padding: 7px 11px;
+.icon_svg {
+    width: 1rem;
+    height: 1rem;
 }
 
 .contacts_bottom_media h3:nth-child(2) {
