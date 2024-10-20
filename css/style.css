@@ -888,8 +888,8 @@ h6 {
     object-fit: contain;
 }
 .icon_svg_top {
-    width: 30px;
-    background: none;
+    width: 20px;
+    margin-right: 9px;
 }
 
 .contacts_center_text_1,
