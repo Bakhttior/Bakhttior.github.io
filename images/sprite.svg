@@ -19,14 +19,14 @@
         <path d="M11.9604 4.24426C13.4363 4.53093 14.5896 5.6851 14.8771 7.16093" stroke="#46A358" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
         <path fill-rule="evenodd" clip-rule="evenodd" d="M6.41715 12.5825C0.668834 6.83352 1.48623 4.20096 2.0922 3.35263C2.17005 3.21552 4.08881 0.343233 6.14557 2.02839C11.2508 6.23288 4.78767 5.63843 9.07458 9.92607C13.3624 14.2128 12.767 7.74996 16.9717 12.8541C18.6569 14.9117 15.7845 16.8303 15.6483 16.9073C14.7999 17.5141 12.1664 18.3315 6.41715 12.5825Z" stroke="#46A358" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
     </symbol>
-    <symbol viewBox="0 0 20 20" id="position">
+    <symbol viewBox="0 0 14 18" id="location">
         <path fill-rule="evenodd" clip-rule="evenodd" d="M9.09196 7.92543C9.09196 6.77437 8.15926 5.84167 7.0082 5.84167C5.85799 5.84167 4.92529 6.77437 4.92529 7.92543C4.92529 9.07564 5.85799 10.0083 7.0082 10.0083C8.15926 10.0083 9.09196 9.07564 9.09196 7.92543Z" stroke="#46A358" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
         <path fill-rule="evenodd" clip-rule="evenodd" d="M6.99959 16.5C4.58457 16.5 0.75 12.2989 0.75 7.8322C0.75 4.33539 3.54758 1.5 6.99959 1.5C10.4516 1.5 13.25 4.33539 13.25 7.8322C13.25 12.2989 9.41543 16.5 6.99959 16.5Z" stroke="#46A358" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
     </symbol>
 
     <symbol viewBox="0 0 20 20" id="message">
-        <path d="M14.6208 7.51582C14.6208 7.51582 11.9457 10.7263 9.98917 10.7263C8.03345 10.7263 5.32835 7.51582 5.32835 7.51582" stroke="#46A358" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-        <path fill-rule="evenodd" clip-rule="evenodd" d="M2.0434 9.97397C2.0434 4.27556 4.02752 2.37665 9.9799 2.37665C15.9323 2.37665 17.9164 4.27556 17.9164 9.97397C17.9164 15.6716 15.9323 17.5713 9.9799 17.5713C4.02752 17.5713 2.0434 15.6716 2.0434 9.97397Z" stroke="#46A358" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+        <path d="M14.621 7.51581C14.621 7.51581 11.946 10.7263 9.98943 10.7263C8.03371 10.7263 5.32861 7.51581 5.32861 7.51581" stroke="#46A358" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+        <path fill-rule="evenodd" clip-rule="evenodd" d="M2.04346 9.97397C2.04346 4.27556 4.02758 2.37665 9.97997 2.37665C15.9323 2.37665 17.9165 4.27556 17.9165 9.97397C17.9165 15.6716 15.9323 17.5713 9.97997 17.5713C4.02758 17.5713 2.04346 15.6716 2.04346 9.97397Z" stroke="#46A358" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
     </symbol>
     
     <symbol viewBox="0 0 20 20" id="search">
