@@ -36,15 +36,30 @@
                     <li> Blogs</li>
                 </ul>
             </nav>
-            <div class="btn"> <img src="images/Logout.svg" alt=""> <a href="registration.html" class="log_btn">
-                    Login</a> </div>
+            <div class="right__btn__box">
+                <div class="icons__box">
+                    <svg viewBox="0 0 20 20" class="icon_svg_header">
+                        <use href="./images/sprite.svg#search" x="0" y="0"></use>
+                    </svg>
+                    <svg viewBox="0 0 24 24" class="icon_svg_header">
+                        <use href="./images/sprite.svg#basket" x="0" y="0"></use>
+                    </svg>
+                    <p>6</p>
+                </div>
+                <div class="btn btn_hover">
+                    <img src="images/Logout.svg" alt=""> <a href="registration.html" class="log_btn">
+                        Login</a>
+                </div>
+            </div>
+
         </header>
         <section class="text">
             <div class="text_left">
                 <p> Welcome to GreenShop</p>
                 <h1> Let’s Make a Better <span> Planet</span> </h1>
                 <p> We are an online plant shop offering a wide range of cheap and trendy plants. Use our plants to
-                    create an unique Urban Jungle. Order your favorite plants !</p> <a href="#" class="btn_shop">
+                    create an unique Urban Jungle. Order your favorite plants !</p> <a href="#"
+                    class="btn_shop btn_hover">
                     SHOP NOW</a>
             </div>
             <div class="img_right"> <img src="images/img.svg" alt=""> </div>
@@ -56,17 +71,31 @@
                     <div class="nav_box">
                         <nav>
                             <ul>
-                                <li> <a href=""> House Plants</a> </li>
-                                <li> <a href=""> Potter Plants</a> </li>
-                                <li> <a href=""> Seeds</a> </li>
-                                <li> <a href=""> Small Plants</a> </li>
-                                <li> <a href=""> Big Plants</a> </li>
-                                <li> <a href=""> Succulents</a> </li>
-                                <li> <a href=""> Trerrariums</a> </li>
-                                <li> <a href=""> Gardening</a> </li>
-                                <li> <a href=""> Accessories</a> </li>
+                                <li> <a href=""> House Plants</a> <span class="first__span">(33)</span></li>
+                                <li> <a href=""> Potter Plants</a> <span>(12)</span></li>
+                                <li> <a href=""> Seeds</a> <span>(65)</span></li>
+                                <li> <a href=""> Small Plants</a> <span>(39)</span></li>
+                                <li> <a href=""> Big Plants</a> <span>(23)</span></li>
+                                <li> <a href=""> Succulents</a> <span>(17)</span></li>
+                                <li> <a href=""> Trerrariums</a> <span>(19)</span></li>
+                                <li> <a href=""> Gardening</a> <span>(13)</span></li>
+                                <li> <a href=""> Accessories</a><span>(18)</span> </li>
                             </ul>
                         </nav>
+                        <div class="range">
+                            <h3>Price Pange</h3>
+                            <input type="range" min="0" max="1700" value="1230">
+                            <p>Price: <span>$39 - $1230</span></p>
+                            <button class="btn__filter">Filter</button>
+                        </div>
+                        <div class="size__block">
+                            <h2>Size</h2>
+                            <ul>
+                                <li><a href="#">Small</a><span>(119)</span></li>
+                                <li><a href="#">medium</a><span>(86)</span></li>
+                                <li><a href="#">Large</a><span>(78)</span></li>
+                            </ul>
+                        </div>
                         <div class="super_sale_baner"> <img src="images/Super_baner.jpg" alt=""> </div>
                     </div>
                 </section>
@@ -88,9 +117,10 @@
                         <div class="wraper_gallery">
                             <div class="icon">
                                 <div class="img_container"> <img src="images/Gallery/image_1.svg" alt="">
-                                    <div class="hover_icons"> <img src="images/Gallery/icons/Vector.jpg" alt="">
-                                        <img src="images/Gallery/icons/heart_1.jpg" alt=""> <img
-                                            src="images/Gallery/icons/Vector_1.jpg" alt="">
+                                    <div class="hover_icons">
+                                        <img src="images/Gallery/icons/Vector.jpg" alt="" class="btn_hover">
+                                        <img src="images/Gallery/icons/heart_1.jpg" alt="" class="btn_hover">
+                                        <img src="images/Gallery/icons/Vector_1.jpg" alt="" class="btn_hover">
                                     </div>
                                 </div>
                                 <h5> Barberton Daisy</h5>
@@ -98,9 +128,10 @@
                             </div>
                             <div class="icon">
                                 <div class="img_container"> <img src="images/Gallery/image_2.svg" alt="">
-                                    <div class="hover_icons"> <img src="images/Gallery/icons/Vector.jpg" alt="">
-                                        <img src="images/Gallery/icons/heart_1.jpg" alt=""> <img
-                                            src="images/Gallery/icons/Vector_1.jpg" alt="">
+                                    <div class="hover_icons"> <img src="images/Gallery/icons/Vector.jpg" alt=""
+                                            class="btn_hover">
+                                        <img src="images/Gallery/icons/heart_1.jpg" alt="" class="btn_hover"> <img
+                                            src="images/Gallery/icons/Vector_1.jpg" alt="" class="btn_hover">
                                     </div>
                                 </div>
                                 <h5> Angel Wing Begonia</h5>
@@ -108,9 +139,10 @@
                             </div>
                             <div class="icon icon_promotion">
                                 <div class="img_container"> <img src="images/Gallery/image_3.svg" alt="">
-                                    <div class="hover_icons"> <img src="images/Gallery/icons/Vector.jpg" alt="">
-                                        <img src="images/Gallery/icons/heart_1.jpg" alt=""> <img
-                                            src="images/Gallery/icons/Vector_1.jpg" alt="">
+                                    <div class="hover_icons"> <img src="images/Gallery/icons/Vector.jpg" alt=""
+                                            class="btn_hover">
+                                        <img src="images/Gallery/icons/heart_1.jpg" alt="" class="btn_hover"> <img
+                                            src="images/Gallery/icons/Vector_1.jpg" alt="" class="btn_hover">
                                     </div>
                                 </div>
                                 <h5> African Violet</h5>
@@ -119,9 +151,10 @@
                             </div>
                             <div class="icon">
                                 <div class="img_container"> <img src="images/Gallery/image_4.svg" alt="">
-                                    <div class="hover_icons"> <img src="images/Gallery/icons/Vector.jpg" alt="">
-                                        <img src="images/Gallery/icons/heart_1.jpg" alt=""> <img
-                                            src="images/Gallery/icons/Vector_1.jpg" alt="">
+                                    <div class="hover_icons"> <img src="images/Gallery/icons/Vector.jpg" alt=""
+                                            class="btn_hover">
+                                        <img src="images/Gallery/icons/heart_1.jpg" alt="" class="btn_hover"> <img
+                                            src="images/Gallery/icons/Vector_1.jpg" alt="" class="btn_hover">
                                     </div>
                                 </div>
                                 <h5> Beach Spider Lily</h5>
@@ -129,9 +162,10 @@
                             </div>
                             <div class="icon">
                                 <div class="img_container"> <img src="images/Gallery/image_5.svg" alt="">
-                                    <div class="hover_icons"> <img src="images/Gallery/icons/Vector.jpg" alt="">
-                                        <img src="images/Gallery/icons/heart_1.jpg" alt=""> <img
-                                            src="images/Gallery/icons/Vector_1.jpg" alt="">
+                                    <div class="hover_icons"> <img src="images/Gallery/icons/Vector.jpg" alt=""
+                                            class="btn_hover">
+                                        <img src="images/Gallery/icons/heart_1.jpg" alt="" class="btn_hover"> <img
+                                            src="images/Gallery/icons/Vector_1.jpg" alt="" class="btn_hover">
                                     </div>
                                 </div>
                                 <h5> Blushing Bromeliad</h5>
@@ -139,9 +173,10 @@
                             </div>
                             <div class="icon icon_promotion">
                                 <div class="img_container"> <img src="images/Gallery/image_6.svg" alt="">
-                                    <div class="hover_icons"> <img src="images/Gallery/icons/Vector.jpg" alt="">
-                                        <img src="images/Gallery/icons/heart_1.jpg" alt=""> <img
-                                            src="images/Gallery/icons/Vector_1.jpg" alt="">
+                                    <div class="hover_icons"> <img src="images/Gallery/icons/Vector.jpg" alt=""
+                                            class="btn_hover">
+                                        <img src="images/Gallery/icons/heart_1.jpg" alt="" class="btn_hover"> <img
+                                            src="images/Gallery/icons/Vector_1.jpg" alt="" class="btn_hover">
                                     </div>
                                 </div>
                                 <h5> Aluminum Plant</h5>
@@ -150,9 +185,10 @@
                             </div>
                             <div class="icon">
                                 <div class="img_container"> <img src="images/Gallery/image_7.svg" alt="">
-                                    <div class="hover_icons"> <img src="images/Gallery/icons/Vector.jpg" alt="">
-                                        <img src="images/Gallery/icons/heart_1.jpg" alt=""> <img
-                                            src="images/Gallery/icons/Vector_1.jpg" alt="">
+                                    <div class="hover_icons"> <img src="images/Gallery/icons/Vector.jpg" alt=""
+                                            class="btn_hover">
+                                        <img src="images/Gallery/icons/heart_1.jpg" alt="" class="btn_hover"> <img
+                                            src="images/Gallery/icons/Vector_1.jpg" alt="" class="btn_hover">
                                     </div>
                                 </div>
                                 <h5> Bird's Nest Fern</h5>
@@ -160,9 +196,10 @@
                             </div>
                             <div class="icon icon_promotion">
                                 <div class="img_container"> <img src="images/Gallery/image_8.svg" alt="">
-                                    <div class="hover_icons"> <img src="images/Gallery/icons/Vector.jpg" alt="">
-                                        <img src="images/Gallery/icons/heart_1.jpg" alt=""> <img
-                                            src="images/Gallery/icons/Vector_1.jpg" alt="">
+                                    <div class="hover_icons"> <img src="images/Gallery/icons/Vector.jpg" alt=""
+                                            class="btn_hover">
+                                        <img src="images/Gallery/icons/heart_1.jpg" alt="" class="btn_hover"> <img
+                                            src="images/Gallery/icons/Vector_1.jpg" alt="" class="btn_hover">
                                     </div>
                                 </div>
                                 <h5> Broadleaf Lady Palm</h5>
@@ -171,9 +208,10 @@
                             </div>
                             <div class="icon">
                                 <div class="img_container"> <img src="images/Gallery/image_9.svg" alt="">
-                                    <div class="hover_icons"> <img src="images/Gallery/icons/Vector.jpg" alt="">
-                                        <img src="images/Gallery/icons/heart_1.jpg" alt=""> <img
-                                            src="images/Gallery/icons/Vector_1.jpg" alt="">
+                                    <div class="hover_icons"> <img src="images/Gallery/icons/Vector.jpg" alt=""
+                                            class="btn_hover">
+                                        <img src="images/Gallery/icons/heart_1.jpg" alt="" class="btn_hover"> <img
+                                            src="images/Gallery/icons/Vector_1.jpg" alt="" class="btn_hover">
                                     </div>
                                 </div>
                                 <h5> Chinese Evergreen</h5>
@@ -199,16 +237,16 @@
                     <div class="summer_img"><img src="images/Blog/image_14.png" alt=""></div>
                     <div class="summer_text">
                         <h2> Summer cactus & succulents</h2>
-                        <p> We are an online plant shop offering a wide range of cheap and trendy plants</p> <a
-                            href="#"> Find More > </a>
+                        <p> We are an online plant shop offering a wide range of cheap and trendy plants</p> <a href="#"
+                            class="btn_hover"> Find More > </a>
                     </div>
                 </div>
                 <div class="styling_trends">
                     <div class="styling_img"><img src="images/Blog/image_15.png" alt=""></div>
                     <div class="styling_text">
                         <h2> Styling Trends & much more</h2>
-                        <p> We are an online plant shop offering a wide range of cheap and trendy plants</p> <a
-                            href="#"> Find More > </a>
+                        <p> We are an online plant shop offering a wide range of cheap and trendy plants</p> <a href="#"
+                            class="btn_hover"> Find More > </a>
                     </div>
                 </div>
             </div>
@@ -270,7 +308,7 @@
                     <h2>Would you like to join newsletters?</h2>
                     <div class="contacts_text_intput">
                         <input type="text" placeholder="enter your email address...">
-                        <button type="submit">join</button>
+                        <button type="submit" class="btn_hover">join</button>
                     </div>
                     <p>We usually post offers and challenges in newsletter. We’re your online houseplant destination. We
                         offer a wide range of
@@ -282,15 +320,15 @@
                     <img src="images/Frame_logo.svg" alt="Company Logo">
                 </div>
                 <div class="contacts_center_text_1">
-                    <img src="images/contacts/Icon.svg" alt="">
+                    <img src="images/Location.svg" alt="">
                     <p>70 West Buckingham Ave. Farmingdale, NY 11735</p>
                 </div>
                 <div class="contacts_center_text_2">
-                    <img src="images/contacts/Message.svg" alt="">
+                    <img src="images/Message.svg" alt="">
                     <a href="#">contact@greenshop.com</a>
                 </div>
                 <div class="contacts_center_number">
-                    <img src="images/contacts/Calling.svg" alt="">
+                    <img src="images/Calling.svg" alt="">
                     <p>+88 01911 717 490</p>
                 </div>
             </div>
@@ -329,11 +367,33 @@
                     <h3>Social Media</h3>
                     <div class="media_box">
                         <ul>
-                            <li><a href="#"><img src="images/contacts/icons/Facebook.svg" alt=""></a></li>
-                            <li><a href="#"><img src="images/contacts/icons/Instagram.svg" alt=""></a></li>
-                            <li><a href="#"><img src="images/contacts/icons/Twitter.svg" alt=""></a></li>
-                            <li><a href="#"><img src="images/contacts/icons/Linkedin.svg" alt=""></a></li>
-                            <li><a href="#"><img src="images/contacts/icons/Union.svg" alt=""></a></li>
+                            <li>
+                                <a href="#">
+                                    <svg viewBox="0 0 8 16" class="icon_svg">
+                                        <use href="./images/sprite.svg#facebook"></use>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li><a href="#">
+                                    <svg viewBox="0 0 16 16" class="icon_svg">
+                                        <use href="./images/sprite.svg#instagram"></use>
+                                    </svg>
+                                </a></li>
+                            <li><a href="#">
+                                    <svg viewBox="0 0 16 13" class="icon_svg">
+                                        <use href="./images/sprite.svg#twitter"></use>
+                                    </svg>
+                                </a></li>
+                            <li><a href="#">
+                                    <svg viewBox="0 0 16 16" class="icon_svg">
+                                        <use href="./images/sprite.svg#linkedin"></use>
+                                    </svg>
+                                </a></li>
+                            <li><a href="#">
+                                    <svg viewBox="0 0 19 14" class="icon_svg">
+                                        <use href="./images/sprite.svg#union" x="0" y="0"></use>
+                                    </svg>
+                                </a></li>
                         </ul>
                         <h3>We accept</h3>
                         <img src="images/contacts/image_16.svg" alt="cards">
