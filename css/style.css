@@ -664,6 +664,31 @@ input[type="range"]:active::-webkit-slider-thumb {
     color: #fff;
 }
 
+.size__block {
+    margin: 46px 0 19px;
+}
+.size__block h2 {
+    font-family: "Cera_pro_bold";
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 16px;
+    color: #3d3d3d;
+}
+.size__block ul li {
+    width: 90%;
+    list-style: none;
+    padding: 12px;
+    display: flex;
+    justify-content: space-between;
+}
+.size__block ul li a {
+    text-decoration: none;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 40px;
+    color: #3d3d3d;
+}
+
 .super_sale_baner {
     max-width: 100%;
     height: 470px;
