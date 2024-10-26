@@ -359,6 +359,31 @@ h6 {
     margin: 15px 0;
 }
 
+.custom_label {
+    display: inline-flex;
+    align-items: center;
+    cursor: pointer;
+}
+.custom_label::before {
+    content: "";
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    border: 2px solid #333;
+    border-radius: 4px;
+    margin-right: 10px;
+    transition: background-color 0.3s ease;
+    position: relative;
+}
+.custom_checkbox:checked +.custom_label::before {
+    background-color: #4CAF50;
+    border-color: #4CAF50;
+}
+
+#check, #check_2 {
+    display: none;
+}
+
 .wraper_container main input::placeholder {
     padding: 20px;
 }
