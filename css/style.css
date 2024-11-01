@@ -49,11 +49,6 @@ h6 {
     margin: 30px auto 0;
 }
 
-.header_logo {
-    color: #46A358;
-    max-width: 12%;
-}
-
 .container header {
     display: flex;
     min-height: 50px;
@@ -63,13 +58,11 @@ h6 {
 }
 
 .header_logo {
-    display: flex;
-    justify-content: center;
-    max-height: 34px;
+    max-width: 12%;
 }
 
 .header_logo img {
-    max-width: 100%;
+    width: 100%;
 }
 
 .container header nav {
@@ -79,7 +72,7 @@ h6 {
 }
 
 .container header nav>ul {
-    width: 100%;
+    width: 98%;
     display: flex;
     justify-content: space-between;
     list-style: none;
@@ -498,8 +491,8 @@ h6 {
     align-items: center;
 }
 
-.gallery .icon img {
-    max-width: 100%;
+.gallery .icon .img_container>img {
+    width: 100%;
 }
 
 .img_container {
@@ -783,12 +776,13 @@ input[type="range"]:active::-webkit-slider-thumb {
 }
 
 .styling_img,
-.summer_img {
+.summer_img,
+.summer_text,
+.styling_text{
     width: 49%;
 }
-
-.summer_cactus .styling_img img,
-.styling_trends .summer_img img {
+.styling_img img,
+.summer_img img{
     width: 100%;
 }
 
@@ -799,11 +793,6 @@ input[type="range"]:active::-webkit-slider-thumb {
     display: flex;
     justify-content: center;
     padding: 37px 30px 10px 0;
-}
-
-.summer_text,
-.styling_text {
-    width: 50%;
 }
 
 .summer_text h2,
@@ -941,20 +930,6 @@ input[type="range"]:active::-webkit-slider-thumb {
     margin-right: 61px;
 }
 
-.contacts_card_top {
-    background-repeat: no-repeat;
-    background-size: contain;
-    height: 47%;
-}
-
-.contacts_card_top_bg_1 {
-    background-image: url(../images/contacts/Picture.svg);
-}
-
-.contacts_card_top_bg_2 {
-    background-image: url(../images/contacts/Picture_1.svg);
-
-}
 
 .contacts_card_line::after {
     position: absolute;
@@ -964,10 +939,6 @@ input[type="range"]:active::-webkit-slider-thumb {
     width: 1px;
     height: 100%;
     background-color: rgb(70, 163, 88, 0.1);
-}
-
-.contacts_card_top_bg_3 {
-    background-image: url(../images/contacts/Picture_2.svg);
 }
 
 .contacts_card_text {
@@ -1045,14 +1016,12 @@ input[type="range"]:active::-webkit-slider-thumb {
     background: rgb(70, 163, 88, 0.1);
     padding: 25px 22px;
 }
-
 .contacts_center_logo {
-    width: 13%;
+    width: 15%;
 }
 
 .contacts_center_logo img {
     width: 100%;
-    object-fit: contain;
 }
 
 .contacts_center_text_1,
@@ -1233,4 +1202,141 @@ input[type="range"]:active::-webkit-slider-thumb {
          opacity: 0;
          visibility: hidden;
      }
+ }
+
+ @media screen and (max-width: 992px) {
+    .container header nav {
+        width: 35%;
+    }
+    .header_logo {
+        margin: 0 auto;
+        max-width: 29%;
+    }
+    .outer_level_menu {
+
+    }
+    .right__btn__box {
+        margin: 0 auto;
+    }
+    .galery_box_container nav {
+        flex-direction: column;
+    }
+    .galery_box_container nav .drop_down{
+        padding-top: 10px;
+    }
+    .navigation {
+        width: 20%;
+    }
+    .gallery .icon {
+        width: 80%;
+    }
+    .contacts_text_intput button {
+        width: 50%;
+    }
+    .contacts_center_text_1,
+    .contacts_center_number {
+        margin: 0 70px;
+    }
+    .contacts_center {
+        flex-direction: column;
+    }
+    .contacts_bottom_card:nth-child(1), 
+    .contacts_bottom_card:nth-child(2),
+    .contacts_bottom_card:nth-child(3) {
+        margin-right: 30px;
+    }
+    
+ }
+ @media screen and (max-width: 768px) {
+    .container header {
+        flex-direction: column;
+    }
+    .container header nav {
+        width: 50%;
+        padding: 20px 0;
+    }
+    
+    .header_logo {
+         width: 98%;
+    }
+    .header_logo img {
+        width: 100%;
+    }
+
+    .text {
+        flex-direction: column;
+    }
+
+    .flex_container_gallery {
+        flex-direction: column;
+    }  
+
+    .galery_box_container {
+        width: 98%;
+        margin-top: 20px;
+    }
+    .navigation {
+        width: 98%;
+    }
+
+    .summer_cactus,
+    .styling_trends {
+            width: 98%;
+            flex-direction: column;
+            align-items: center;
+            margin: 10px;
+    }
+    .styling_text,
+    .summer_text,
+    .styling_img,
+    .summer_img,
+    .summer_text h2,
+    .styling_text h2 {
+        width: 98%;
+    }
+    .down_box_container .card {
+        max-width: 45%;
+    }
+
+    .contacts_top {
+        flex-wrap: wrap;
+    }
+    
+    .contacts_card_text {
+        margin-top: 30px;
+    }
+    .contacts_card {
+        width: 35%;
+    }
+    .contacts_bottom {
+        flex-direction: column;
+    }
+    .contacts_bottom_card:nth-child(1),
+    .contacts_bottom_card:nth-child(2),
+    .contacts_bottom_card:nth-child(3) {
+        margin-bottom: 30px;
+    }
+ }
+ @media screen and (max-width: 540px) {
+    .upper_box {
+        flex-direction: column;
+    }
+    .summer_cactus,
+    .styling_trends {
+       max-width: 98%;
+    }
+    .down_box_container .card {
+        max-width: 98%;
+    }
+    
+    .contacts_top {
+        flex-direction: column;
+    }
+    
+    .contacts_card_text {
+        margin-top: 30px;
+    }
+    .contacts_card {
+         width: 98%;
+    }
  }
